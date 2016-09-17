@@ -1,0 +1,38 @@
+{
+  "name": "record-locator",
+  "version": "1.0.0",
+  "description": "A record locator is short, easy to read and pronounceable string. This module encodes integers into record locator strings and can decode them back to integers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -x wallaby.js --report text --print none --check-coverage -- -R spec",
+    "lint": "eslint --ignore-pattern wallaby.js *.js"
+  },
+  "keywords": [
+    "record locator",
+    "document reference",
+    "confirmation number",
+    "reservation number",
+    "booking number",
+    "booking reference",
+    "booking code",
+    "record",
+    "locator"
+  ],
+  "author": "DKHR Limited (https://dkhr.com)",
+  "contributors": [
+    {
+      "name": "Zeeshan Muhammad",
+      "email": "zeeshan@dkhr.com"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "eslint-config-xo": "^0.15.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2",
+    "xo": "^0.16.0"
+  }
+}
