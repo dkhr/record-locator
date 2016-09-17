@@ -1,0 +1,12 @@
+{
+  "env": {
+	"node": true,
+	"mocha": true
+  },
+  "plugins": ["xo"],
+  "extends": ["plugin:xo/recommended"],
+  "rules": {
+	"indent": [2, "tab"],
+	"linebreak-style": "off"
+  }
+}
