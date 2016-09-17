@@ -3,6 +3,7 @@
 /**
  * record-locator
  * https://github.com/dkhr/record-locator
+ * https://www.npmjs.com/package/record-locator
  *
  * Copyright (c) 2016 DKHR Limited (https://dkhr.com)
  * Licensed under the MIT license. See the LICENSE file for details.
