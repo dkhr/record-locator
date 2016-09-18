@@ -4,7 +4,7 @@ A Node.js module that encodes integers into a short, easy to read and pronouncea
 ## What is a 'Record Locator'?
 A record locator is an alphanumeric string that represents an integer.
 
-A record locator can be used to provide human-readable representation of a database primary key, providing users with an short, easy to read and pronounceable string. Record locators can be useful when you need to generate a document reference, confirmation number, reservation number or a booking references to share with your users.
+A record locator can be used to provide human-readable representation of a database primary key, providing users with a short, easy to read and pronounceable string. Record locators can be useful when you need to generate a document reference, confirmation number, reservation number or a booking references to share with your users.
 
 *[DKHR](https://dkhr.com/)* uses record locators to provide [Taxfox](https://taxfox.co.uk/) customers an easy way to  reference PDF documents associated to them.
 
@@ -13,7 +13,7 @@ A record locator can be used to provide human-readable representation of a datab
 * The integer `3141592` encodes to the record locator `4ZVYR`
 * The integer `355688197484` encodes to the record locator `DEADBEEF`
 
-You can encode more than 33.5 million integers in a five-character record locator: the largest five-character RecordLocator, `ZZZZZ`, represents the integer `33554431`.
+You can encode more than 33.5 million integers in a five-character record locator: the largest five-character record locator, `ZZZZZ`, represents the integer `33554431`.
 
 For more information, see [Wikipedia's record locator article](https://en.wikipedia.org/wiki/Record_locator).
 
