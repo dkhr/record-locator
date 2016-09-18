@@ -1,0 +1,20 @@
+cache:
+  directories:
+    - $HOME/node_modules
+
+language: node_js
+
+script:
+  - "npm test"
+  - "npm run-script coverage"
+  - "npm run-script lint"
+
+node_js:
+  - "node"
+  - "iojs"
+
+branches:
+  only:
+  - master
+
+sudo: false

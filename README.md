@@ -1,4 +1,4 @@
-# record-locator
+# record-locator [![Build Status](https://travis-ci.org/dkhr/record-locator.svg?branch=master)](https://travis-ci.org/dkhr/record-locator)
 A Node.js module that encodes integers into a short, easy to read and pronounceable string.
 
 ## What is a 'Record Locator'?
