@@ -1,12 +1,12 @@
 {
   "name": "record-locator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A record locator is short, easy to read and pronounceable string. This module encodes integers into record locator strings and can decode them back to integers.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*.js",
+    "test": "mocha test/index.js",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -x wallaby.js --report text --print none --check-coverage -- -R spec",
-    "lint": "eslint --ignore-pattern wallaby.js *.js"
+    "lint": "eslint index.js test/index.js"
   },
   "keywords": [
     "record locator",
@@ -23,10 +23,18 @@
   "contributors": [
     {
       "name": "Zeeshan Muhammad",
-      "email": "zeeshan@dkhr.com"
+      "email": "zeeshan@dkhr.com",
+      "url": "https://dkhr.com"
     }
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkhr/record-locator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkhr/record-locator/issues"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.5.0",

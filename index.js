@@ -64,7 +64,7 @@ module.exports = {
 		if (parseInt(recordLocator, RADIX) > 0) {
 			while (recordLocator !== 0) {
 				integers.unshift(recordLocator % TOTAL_CHARACTERS);
-				recordLocator = parseInt(recordLocator / TOTAL_CHARACTERS, RADIX)
+				recordLocator = parseInt(recordLocator / TOTAL_CHARACTERS, RADIX);
 			}
 
 			return integers.map(function (currentValue) {
@@ -72,7 +72,7 @@ module.exports = {
 			}).join('');
 		}
 
-		throw new Error('Argument is not a positive integer')
+		throw new Error('Argument is not a positive integer');
 	},
 
 	/**
@@ -86,14 +86,14 @@ module.exports = {
 			recordLocator = recordLocator.toString().toUpperCase().split('');
 
 			var integer = 0;
-			for (var i in recordLocator) {
-				var characterInteger = CHARACTERS_TO_INTEGERS[recordLocator[i]];
+			recordLocator.forEach(function (character) {
+				var characterInteger = CHARACTERS_TO_INTEGERS[character];
 				integer = (integer * TOTAL_CHARACTERS) + characterInteger;
-			}
+			});
 
 			return integer;
 		}
 
-		throw new Error('Argument is not a valid record locator string')
+		throw new Error('Argument is not a valid record locator string');
 	}
 };
