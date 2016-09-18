@@ -1,6 +1,6 @@
 {
   "name": "record-locator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A record locator is short, easy to read and pronounceable string. This module encodes integers into record locator strings and can decode them back to integers.",
   "main": "index.js",
   "scripts": {
