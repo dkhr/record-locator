@@ -4,9 +4,9 @@ A Node.js module that encodes integers into a short, easy to read and pronouncea
 ## What is a 'Record Locator'?
 A record locator is an alphanumeric string that represents an integer.
 
-A record locator can be used to provide human-readable representation of a database primary key, providing users with a short, easy to read and pronounceable string. Record locators can be useful when you need to generate a document reference, confirmation number, reservation number or a booking references to share with your users.
+A record locator can be used to provide a human-readable representation of a database primary key, providing users with a short, easy-to-read and pronounceable string. Record locators can be useful when you need to generate a document reference, confirmation number, reservation number or a booking reference to share with your users.
 
-*[DKHR](https://dkhr.com/)* uses record locators to provide [Taxfox](https://taxfox.co.uk/) customers an easy way to  reference PDF documents associated to them.
+[DKHR](https://dkhr.com/) uses record locators to provide [Taxfox](https://taxfox.co.uk/) customers with an easy way to reference PDF documents associated to them.
 
 ### Examples
 * The integer `8128` encodes to the record locator `9Y2`
@@ -41,7 +41,7 @@ var documentReference = '4ZVYR';
 var documentId = recordLocator.decode(documentReference);
 
 // console.log output: 3141592
-console.log(documentReference);
+console.log(documentId);
 ```
 
 ### Error Handling
@@ -74,7 +74,7 @@ Certain characters, such as the letters "B" and "S", as well as the numbers 0 (z
 
 These specific characters are automatically replaced by `encode()` and `decode()` as follows:
 
-| Character | Replacement Character |
+| Character | Replacement Letter    |
 |-----------|-----------------------|
 | B         | P                     |
 | S         | F                     |
@@ -82,6 +82,6 @@ These specific characters are automatically replaced by `encode()` and `decode()
 | 1         | I                     |
 
 ## Related Libraries
-The following third-party libraries provide alternative implementations that can also encode and decode record locators:
+The following third-party libraries provide alternative implementations that can also be used to encode and decode record locators:
 * Jesse Vincent's Perl module: [Number::RecordLocator](http://search.cpan.org/~jesse/Number-RecordLocator/lib/Number/RecordLocator.pm)
 * Oliver Jakoubek's PHP library: [php-recordlocator](https://github.com/jakoubek/php-recordlocator)
