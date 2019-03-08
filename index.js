@@ -95,5 +95,9 @@ module.exports = {
 		}
 
 		throw new Error('Argument is not a valid record locator string');
-	}
+  },
+  __test: {
+    INTEGERS_TO_CHARACTERS,
+    CHARACTERS_TO_INTEGERS,
+  },
 };
