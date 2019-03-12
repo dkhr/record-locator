@@ -11,7 +11,7 @@ const {
 const DID_NOT_THROW = Symbol()
 
 describe('properties', () => {
-	it('is deterministic', () => {
+	it('is a bijection', () => {
 		fc.assert(fc.property(
 			fc.integer(1, Number.MAX_SAFE_INTEGER),
 			seed => decode(encode(seed)) === seed
